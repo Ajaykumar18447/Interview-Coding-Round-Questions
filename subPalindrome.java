@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class subPalindrome {
     public static void sub(String str){
         for(int i=0;i<str.length();i++){
-            for(int j=i;j<=str.length();j++){
+            for(int j=i+1;j<=str.length();j++){
                 if(isPalindrom(str.substring(i,j))){
                     System.out.println(str.substring(i,j));
                 }
