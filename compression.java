@@ -2,7 +2,7 @@ package interviewCodingQuestion;
 
 import java.util.Scanner;
 
-public class stringCompression {
+public class compression {
 
     public static String compression1(String str){
         String s = str.charAt(0) +"";
