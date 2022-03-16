@@ -22,9 +22,14 @@ public class trailingZeros {
     public static int trailing(int num){
 
         int count =0;
-
+        /*
         for(int i=5;num/i>=1;i=i*5){
             count = count+num/i;
+        }
+        */
+        while(num!=0){
+            count += num/5;
+            num = num/5;
         }
         return count;
     }
