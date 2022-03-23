@@ -22,8 +22,13 @@ public class mergeArray {
         m = arr1.length;
         n = arr2.length;
 
+        int res[] = new int[m+n];
+
         int i=0,j=0;
         while(i<n){
+            if(arr1[i]==0){
+
+            }
             if(arr1[i]>arr2[j]){
                 int temp = arr1[i];
                 arr1[i] = arr2[j];
@@ -33,8 +38,9 @@ public class mergeArray {
             }
             i++;
         }
-        System.out.println(Arrays.toString(arr1));
-        System.out.println(Arrays.toString(arr2));
+        System.arraycopy(arr1, 0, res, 0, m);
+        System.arraycopy(arr2, 0, res, m, n);
+        System.out.println(Arrays.toString(res));
     }
     public static void sortarr2(int arr2[]){
         for(int i=1;i<arr2.length;i++){
